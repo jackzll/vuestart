@@ -2,7 +2,7 @@
   <div class="order">
           <form> 
                 <div class="row">
-                    <Btn-default txt="使用.native绑定原生click" @click.native="btnMethod"></Btn-default>
+                    <Btn-default text="使用.native绑定原生click" @click.native="btnMethod"></Btn-default>
                 </div>
                 <div class="row">
                       使用.sync：<Text-input :value.sync="descTxt" placeholder="请输入使用说明"></Text-input>

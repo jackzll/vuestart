@@ -23,6 +23,9 @@ import {mapState,createNamespacedHelpers} from 'vuex';
 const {mapActions}=createNamespacedHelpers('indexModuel');
 export default {
   name: 'index',
+  data:function(){
+    return {}
+  },
   computed:mapState({
     myMsg:state=>{
         // var path=this.$route.path;
@@ -42,6 +45,9 @@ export default {
      ...mapActions([
         'todosChange'
       ]),
+     checkTxt(){
+
+     },
      ansycOptions(){
         setTimeout(()=>{
             var v=Math.floor(Math.random()*10);
